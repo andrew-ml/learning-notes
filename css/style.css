@@ -1,0 +1,118 @@
+body {
+  position: relative;
+  width: 400px;
+  margin: 100px auto 0;
+  font-family: sans-serif;
+}
+.key-box {
+  position: relative;
+}
+.key {
+  position: absolute;
+  background-size: contain;
+}
+.key-box-1 .key {
+  top: 9px;
+  left: 2px;
+  height: 152px;
+  width: 56px;
+  background: url(../images/key-1.jpg) 0 0 no-repeat;
+}
+.key-box-2 {
+}
+.key-box-2 .key {
+  top: 14px;
+  left: 3px;
+  height: 78px;
+  width: 53px;
+  background: url(../images/key-2.jpg) 0 0 no-repeat;
+}
+
+.line {
+  position: relative;
+  height: 10px;
+}
+.line.active:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  margin-left: -10px ;
+  border-radius: 50%;
+  background: #000;
+}
+.line.additional.hide span {
+  opacity: 0;
+}
+.line.additional span {
+  width: 40px;
+  margin: 0 auto;
+}
+.line.additional.active span {
+  opacity: 1;
+}
+.line.black span {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  top: 3px;
+  background: #000;
+}
+.note {
+  height: 80px;
+  margin: 10px 0 0;
+  font-size: 60px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.slider-range {
+  position: absolute;
+  top: 0;
+  height: 290px;
+  right: -30px  ;
+}
+
+.ui-slider.ui-slider-vertical .ui-slider-handle {
+  height: 10px;
+}
+
+.ui-slider .ui-slider-handle:hover {
+  background: #3abfe6;
+}
+
+.note-wrapper {
+  position: relative;
+}
+.note-title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 2;
+}
+.note-title label {
+  display: block;
+  cursor: pointer; 
+}
+
+.note-title select {
+  display: block;
+  width: 52px;
+  margin: 15px 0 0 3px;
+}
+
+.speed-wrapper {
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+.slider-speed {
+  display: inline-block;
+  width: 300px;
+  margin-left: 20px;
+}
