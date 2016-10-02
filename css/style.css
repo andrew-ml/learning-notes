@@ -1,8 +1,26 @@
 body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.app-wrapper {
   position: relative;
   width: 400px;
   margin: 100px auto 0;
-  font-family: sans-serif;
+}
+header {
+  padding: 5px;
+  background: #9faaad;
+  text-align: center;
+}
+header .logo {
+  color: #fff;
+  font-size: 29px;
+  font-family: Satisfy, cursive;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .key-box {
   position: relative;
